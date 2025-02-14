@@ -1,6 +1,7 @@
 provider "google" {
   project     = "project-irshaq"
   region      = "us-central1"
+credentials = file("gcp.json")  # Add this line
 }
 
 resource "google_compute_instance" "gcpjenkins" {
