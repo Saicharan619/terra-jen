@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Saicharan619/terra-jen.git'
+                git url: 'https://github.com/Saicharan619/terra-jen.git' , branch: 'main'
             }
         }
         stage('Terraform Init') {
