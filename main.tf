@@ -3,7 +3,7 @@ provider "google" {
   region      = "us-central1"
 }
 
-resource "google_compute_instance" "jenkinsgcp" {
+resource "google_compute_instance" "gcpjenkins" {
   name         = "terrajenvm"
   machine_type = "e2-medium"
   zone         = "us-central1-a"
