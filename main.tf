@@ -11,6 +11,9 @@ resource "google_compute_instance" "jenkinsgcp" {
   boot_disk {
     initialize_params {
       image = "centos-stream-9"
+ labels = {
+        my_label = "value"
+      }
     }
   }
 
