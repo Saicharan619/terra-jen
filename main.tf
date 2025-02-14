@@ -10,7 +10,7 @@ resource "google_compute_instance" "vm_instance" {
 
   boot_disk {
     initialize_params {
-      image = "debian-12"
+      image = "centos-cloud/centos-stream-9"
     }
   }
 
